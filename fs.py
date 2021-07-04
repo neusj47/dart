@@ -7,9 +7,11 @@ import pandas as pd
 from bs4 import BeautifulSoup
 import xml.etree.ElementTree as Etree
 import ssl
+
+
 context = ssl._create_unverified_context()
 
-api_key = 'b9b49cf014cf7d692a8f768248a7c1b0f6c330d5'
+api_key = '....'
 url_code = 'https://opendart.fss.or.kr/api/corpCode.xml?crtfc_key=' + api_key
 
 resp = urlopen(url_code, context=context)
